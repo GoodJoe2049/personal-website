@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Text from './components/CustomUI/Text.tsx';
 
 function App() {
   return (
-    <div>hi</div>
+    <Text>Testing the Text tag</Text>
   );
 }
 
