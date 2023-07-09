@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 
 const TextFormat = styled.div`
   font-size: 20px;
-  font-family: Calibri;
+  font-family: Helvetica;
   font-weight: bold;
   color: white;
 `;

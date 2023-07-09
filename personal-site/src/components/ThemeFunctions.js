@@ -5,9 +5,9 @@ export const generalTextColor = theme =>(
 );
 
 export const buttonColor = theme =>(
-  (theme ?? true) ? "#003b7a" : "#ba7916"
+  (theme ?? true) ? "#004ea1" : "#ba7916"
 );
 
 export const backgroundColor = theme =>(
-  (theme ?? true) ? "#000000" : "#FFFFFF"
+  (theme ?? true) ? "#FFFFFF" : "#292929"
 );

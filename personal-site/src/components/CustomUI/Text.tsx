@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 
 const TextFormat = styled.div<{textColor: string}>`
   font-size: 18px;
-  font-family: Calibri;
+  font-family: Helvetica;
   transition: all .25s ease-in-out;
   color: ${props => props.textColor};
 `;
