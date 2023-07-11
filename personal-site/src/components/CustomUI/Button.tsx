@@ -12,7 +12,7 @@ const TextFormat = styled.div`
 interface ButtonProps{
   children: string;
   theme?: boolean;
-  onClick?(): any;
+  onClick?(): function;
   //more to be added
 };
 

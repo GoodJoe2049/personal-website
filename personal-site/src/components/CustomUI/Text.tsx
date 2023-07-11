@@ -3,7 +3,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const TextFormat = styled.div<{textColor: string}>`
-  font-size: 18px;
+  font-size: 14px;
   font-family: Helvetica;
   transition: all .25s ease-in-out;
   color: ${props => props.textColor};
