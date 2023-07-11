@@ -18,31 +18,28 @@ interface NavigationProps{
 const Navigation = ({theme, setTheme}: NavigationProps) => {
   console.log(theme)
   return (
-    <Navbar appearance='inverse' style={{
-      backgroundColor: navBarBackgroundColor(theme),
-      transition: "all .25s ease-in-out",
-      fontFamily: "Helvetica"
-      }}>
-        <Nav appearance='tabs'>
-          <Nav.Item>About Me</Nav.Item>
-          <Nav.Item>Experience</Nav.Item>
-        </Nav>
-        <Nav pullRight>
-          <Toggle style={{
-            alignItems: "center",
-            margin: "10px",
-            paddingTop: "20px",
-            width: "50px",
-            transition: "all .25s ease-in-out",
-            }}
-            onClick={()=>setTheme(!theme)}
-            unCheckedChildren={"🔆"}
-            checkedChildren={"🌙"}
-          >
-          </Toggle>
-          <Nav.Item>Contact Me</Nav.Item>
-        </Nav>
-    </Navbar>
+    <React.Fragment>
+        <Navbar appearance='inverse' style={{
+          backgroundColor: navBarBackgroundColor(theme),
+          transition: "all .25s ease-in-out",
+          fontFamily: "Helvetica"
+          }}>
+          <Nav appearance="default">
+            <Nav.Item>About Me</Nav.Item>
+            <Nav.Item>Experience</Nav.Item>
+          </Nav>
+          <Nav pullRight>
+            <Nav.Item>Contact Me</Nav.Item>
+            <Button onClick={()=>setTheme(!theme)} style={{
+              transition: "all .25s ease-in-out",
+              margin: "10px",
+              fontSize: "20px"
+            }}>
+              {theme ? "🌙" : "🔆"}
+            </Button>
+          </Nav>
+        </Navbar>
+    </React.Fragment>
   );
 };
 
